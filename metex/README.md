@@ -27,7 +27,14 @@ end
 
 Run `mix deps.get`
 
+# Simple Weather Reporter
 
+Add Module Metex.Worker with functionality for
+ - Ref API Key from http://openweathermap.org
+ - Make API Call
+ - Process Response
+ - Print Temperature
+ 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
