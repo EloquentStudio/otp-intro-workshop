@@ -6,6 +6,28 @@ Step2: `cd metex`
 
 Step3: `mix test`
 
+# Add dependencies
+
+```mix.exs
+defp deps do 
+  [
+    {:httpoison, "~> 0.9.0"},
+    {:json,      "~> 0.3.0"}
+  ]
+end
+```
+
+```
+def application do
+  [
+    extra_applications: [:logger, :httpoison]
+  ]
+end
+```
+
+Run `mix deps.get`
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
