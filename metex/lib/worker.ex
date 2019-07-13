@@ -40,3 +40,8 @@ end
 ## Usage
 # iex -S mix
 # Metex.Worker.temperature_of "Delhi"
+
+## Working with multiple cities
+# iex -S mix
+# cities = ["Delhi", "Mumbai", "Kolkata", "Chennai"]
+# cities |> Enum.map(fn city -> Metex.Worker.temperature_of(city) end)
